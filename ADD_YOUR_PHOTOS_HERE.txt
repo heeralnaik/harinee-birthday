@@ -1,0 +1,1 @@
+Add cover.jpg and memory-1.jpg through memory-4.jpg to this folder. See README.md.
