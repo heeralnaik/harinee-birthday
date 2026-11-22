@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8eee9" />
+  <title>18 Years of Us — A Birthday Letter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain"></div>
+  <nav class="topbar">
+    <a class="brand" href="#home">little things, forever <span>♡</span></a>
+    <a class="music-toggle song-link" href="https://open.spotify.com/search/Taylor%20Swift%20Love%20Story" target="_blank" rel="noopener">♫ <span>our song · Love Story</span></a>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+      <p class="eyebrow">HAPPY BIRTHDAY, HARINEE · A LITTLE SURPRISE</p>
+      <h1>Dear <em>Harinee,</em><br>my forever person.</h1>
+      <p class="hero-sub">18 years of growing up together.<br>Different places. Different seasons. Still my constant.</p>
+      <button class="primary-btn" id="openStory">Open your little surprise <span>↗</span></button><p class="song-caption">a little soundtrack for this scrapbook: <em>Love Story</em> ♫</p>
+      <div class="hero-photo photo-frame">
+        <img src="assets/photos/cover.jpg" alt="A favorite photo of the two of you" onerror="this.style.display='none'; this.parentElement.classList.add('photo-empty'); this.parentElement.querySelector('.photo-hint').hidden=false;">
+        <span class="photo-hint" hidden>Add your favorite photo<br><small>assets/photos/cover.jpg</small></span>
+        <span class="tape"></span>
+      </div>
+      <div class="scroll-note">SCROLL TO UNFOLD OUR STORY <span>↓</span></div>
+      <span class="doodle heart-one">♡</span><span class="doodle star-one">✳</span>
+    </section>
+
+    <section class="intro section" id="story">
+      <p class="eyebrow">CHAPTER ONE · THE BEGINNING</p>
+      <h2>Some people become<br><em>part of your story.</em></h2>
+      <p class="body-copy">And then there are the rare ones who feel like they were always meant to be in it. Harinee, you have been part of mine for 18 whole years.</p>
+      <div class="years"><strong>18</strong><span>years of friendship<br>and still counting</span></div>
+    </section>
+
+    <section class="gallery section">
+      <div class="section-heading">
+        <div><p class="eyebrow">A FEW PIECES OF FOREVER</p><h2>Little moments,<br><em>big memories.</em></h2></div>
+        <p class="side-note">A tiny museum<br>of us ♡</p>
+      </div>
+      <div class="photo-grid">
+        <figure class="polaroid tilt-left"><img src="assets/photos/memory-1.jpg" alt="Friendship memory one" onerror="this.style.display='none'; this.parentElement.classList.add('empty');"><figcaption>little us, up in the trees</figcaption></figure>
+        <figure class="polaroid tilt-right"><img src="assets/photos/memory-2.jpg" alt="Friendship memory two" onerror="this.style.display='none'; this.parentElement.classList.add('empty');"><figcaption>the many versions of our silliness</figcaption></figure>
+        <figure class="polaroid tilt-right"><img src="assets/photos/memory-3.jpg" alt="Friendship memory three" onerror="this.style.display='none'; this.parentElement.classList.add('empty');"><figcaption>proof that we have always been unserious</figcaption></figure>
+        <figure class="polaroid tilt-left"><img src="assets/photos/memory-4.jpg" alt="Friendship memory four" onerror="this.style.display='none'; this.parentElement.classList.add('empty');"><figcaption>18 years down, a lifetime to go</figcaption></figure>
+      </div>
+      <p class="gallery-footnote">♡ Replace these spaces with your favorite photos together.</p>
+    </section>
+
+    <section class="quote-band">
+      <span class="quote-mark">“</span>
+      <p>Despite the distance, the time, the seasons, the choices and the decisions — you remain my constant.</p>
+      <span class="quote-credit">— a little truth from me to you</span>
+    </section>
+
+    <section class="section constant">
+      <p class="eyebrow">CHAPTER TWO · THE THINGS I MISS</p>
+      <h2>It's the little things<br><em>that feel like you.</em></h2>
+      <p class="body-copy">Tap each little note. Some things never stop feeling familiar.</p>
+      <div class="memory-cards">
+        <button class="memory-card" data-message="I still want to send you outfit pictures and ask, 'Be honest, which one looks best?' Like you're right there getting ready with me."><span>01</span><strong>My unofficial stylist</strong><small>tap to open ↗</small></button>
+        <button class="memory-card" data-message="The kind of conversations where we start with one thing and somehow end up talking about everything. I miss that easy closeness."><span>02</span><strong>Our endless conversations</strong><small>tap to open ↗</small></button>
+        <button class="memory-card" data-message="The comfort of knowing I can reach out, tell you anything, and still feel understood. That kind of friendship is rare."><span>03</span><strong>My safe place</strong><small>tap to open ↗</small></button>
+      </div>
+      <div class="memory-reveal" id="memoryReveal" aria-live="polite">Choose a note above to reveal a little thought ♡</div>
+    </section>
+
+    <section class="distance section">
+      <div class="distance-art"><span class="orbit orbit-a"></span><span class="orbit orbit-b"></span><span class="tiny-heart">♡</span><span class="distance-label">YOU</span><span class="distance-label label-two">ME</span></div>
+      <div>
+        <p class="eyebrow">CHAPTER THREE · FIVE YEARS APART</p>
+        <h2>Far away,<br><em>never far from me.</em></h2>
+        <p class="body-copy">We haven't seen each other in five years. And somehow, I still feel close to you. Distance has changed where we are, but it hasn't changed where you belong in my life.</p>
+      </div>
+    </section>
+
+    <section class="letter-section section">
+      <p class="eyebrow">A LETTER, JUST FOR YOU</p>
+      <h2>Something I want<br><em>you to know.</em></h2>
+      <button class="envelope" id="envelope" aria-label="Open your letter">
+        <span class="envelope-flap"></span><span class="envelope-heart">♡</span><span class="envelope-label">open me</span>
+      </button>
+      <div class="letter" id="letter" aria-hidden="true">
+        <p class="handwritten">My sweetest girl,</p>
+        <p>You have the purest heart and are genuinely one of the sweetest people I know. Eighteen years later, I still find myself wanting to text you about the smallest things — even something as simple as asking which outfit looks best.</p>
+        <p>It's funny how life keeps moving. We grow, make choices, take different paths, and find ourselves in different places. But through all the distance, time, seasons, choices and decisions, you have remained a constant in my life.</p>
+        <p>As we're getting older and slowly witnessing this whole adventure called adulthood, I want you by my side. And I want to be by yours. I want to celebrate your wins, sit with you through the uncertain days, hear every little update, and unfold this next chapter of life together.</p>
+        <p>Here's to finally making more memories in person, to all the conversations we've yet to have, and to a friendship that still feels like home.</p>
+        <p class="handwritten signoff">Happy birthday. I love you endlessly. ♡</p>
+      </div>
+      <p class="letter-hint" id="letterHint">There's a little letter waiting for you. Tap the envelope.</p>
+    </section>
+
+    <section class="future section">
+      <p class="eyebrow">CHAPTER FOUR · WHAT'S STILL TO COME</p>
+      <h2>Our next chapter<br><em>is still unwritten.</em></h2>
+      <p class="body-copy">More birthdays. More outfit checks. More spontaneous plans. More ordinary days that become favorite memories. I can't wait to see what life has waiting for us.</p>
+      <div class="wish-list">
+        <span>♡ more in-person hugs</span><span>♡ more late-night talks</span><span>♡ more adventures</span><span>♡ all of life's big moments</span>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-flower">✿</div>
+      <p class="eyebrow">TO THE GIRL WHO HAS BEEN THERE THROUGH IT ALL</p>
+      <h2>Some friendships<br>just <em>feel like home.</em></h2>
+      <p class="footer-small">18 years down. A lifetime to go.</p>
+      <p class="footer-sign">Always your girl, Heeral ♡</p>
+    </footer>
+  </main>
+
+  <div class="modal" id="photoModal" aria-hidden="true"><button class="modal-close" id="closeModal" aria-label="Close">×</button><div class="lightbox-card"><img id="modalImage" alt="A friendship memory"><p id="modalText"></p></div></div>
+  <script src="script.js"></script>
+</body>
+</html>
